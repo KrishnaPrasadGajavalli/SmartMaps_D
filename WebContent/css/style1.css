@@ -234,57 +234,22 @@ html {
   content: "";
   display: table;
 }
-.sminputs .input  input[type="text"]{
-	
-   display: block;
-  margin: 0;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-   padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-  
-}
-.sminputs .input  input[type="password"]{
-	
-   display: block;
-  margin: 0;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-   padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-  
-}
-.sminputs .input  input[type="email"]{
-	
-   display: block;
-  margin: 0;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-   padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-}
 .sminputs .input {
- position:relative;
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 50px;
+  padding: 10px 20px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: none;
+  float: left;
+  font-size:18px;
   background-color: #FFF;
-    height: 50px;
-  
-  
-  
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .sminputs .input.active {
   background: #eee;
@@ -328,7 +293,6 @@ html {
   color: rgba(75, 89, 102, 0.85);
 }
 .sminputs .hide-password {
-	
   display: inline-block;
   position: absolute;
   right: 0;
@@ -339,10 +303,10 @@ html {
   background: #FFF;
   overflow: hidden;
   color: #444;
-  border: solid 1px gainsboro;
-  height:40px;
+  height:50px;
   cursor: pointer;
-  line-height: 38px;
+  //margin-top: 12px;
+  line-height: 48px;
 }
 
 html {

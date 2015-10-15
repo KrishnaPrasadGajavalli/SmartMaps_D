@@ -60,84 +60,9 @@ a:hover
 
 
 </style>
-    <script>
-    /* var xmlhttp = new XMLHttpRequest();
-    var url = ""; //Javaclass url
 
-    xmlhttp.onreadystatechange=function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            myFunction(xmlhttp.responseText);
-        }
-    }
-    xmlhttp.open("POST", "http://localhost:8080/SmartMaps/login/user/loginservice/log"", true);
-    xmlhttp.send();
-	
-    function myFunction(response) {
-        var arr = JSON.parse(response);
-        var i;
-        var user_name,token,status;
-
-        for(i = 0; i < arr.length; i++) {
-			user_name=arr[i].user_name;
-			token=arr[i].token;
-			status=arr[i].status;
-        }
-    } */
-        var uname,token,ca;
-        var c=[];
-        function createCookies()
-        {
-            user_name="Krishna";
-            document.cookie="username="+user_name;
-            console.log("Cookie username created successfully");
-            token="Ab25848C";
-            document.cookie="token="+token;
-            console.log("Cookie token created successfully");
-            //document.cookie="token="+status;
-            //console.log("Cookie status created successfully");
-        }
-        function getCookies()
-        {
-            ca=document.cookie.split(";");
-            console.log(ca);
-            for(var i=0; i<ca.length; i++) 
-            {
-                c[i] = ca[i];
-            }
-        }
-        function checkcookie()
-        {
-            createCookies();
-            getCookies();
-           
-            var c1=c[0];
-            var c2=c[1];
-            //var c3=c[2];
-             console.log(c1);
-            console.log(c2);
-            //console.log(c3);
-            var c4=c1.split("=");
-            //alert(c3);
-            //var c5=c3[1];
-            //alert(c4);
-            var c6=c2.split("=");
-            //var c7=c5[1];
-            //var c8=c3.split("=");
-            //var c9=c8[1];
-            if(c4=="Krishna" && c6=="Ab25848C")
-            {
-                //alert("Hie");
-                window.location.replace("http://localhost:8080/SmartMaps/findme.html");
-            }
-            else
-            {
-                //alert("Bye");
-                window.location.replace("http://localhost:8080/SmartMaps/loginsignup.html");
-            }
-        }
-    </script>
 </head>
-<body onload="checkcookie()">
+<body>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
