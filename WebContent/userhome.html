@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://lipis.github.io/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="http://lipis.github.io/bootstrap-social/assets/css/font-awesome.css">
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: auto;
+      }
+      #map {
+        height: 100%;
+      }
+#container {
+  position: absolute;
+  margin-left:auto;
+  margin-right:auto;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  //line-height: 30px;
+  padding-left: 10px;
+}
+
+    </style>
+  
+  </head>
+  <body>
+  <div class="jumbotron">
+<div class="container">
+      <input id="address" type="text" placeholder="Search a location">
+      <input id="submit" type="button" value="Go">
+    </div>
+    </div>
+    <div id="map">
+        <script src="js/geocoder.js"></script></div>
+    <div class="navbar navbar-bottom">
+<div class="container text-center">
+	<input id="submit" type="button" value="Find Near Me">
+</div>
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZWSTsJPv3yRfVUnSxaXtbl-Dv6Bspek&signed_in=false&callback=initMap"
+        async defer></script>
+  </body>
+</html>

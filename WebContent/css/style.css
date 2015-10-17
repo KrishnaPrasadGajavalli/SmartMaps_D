@@ -211,14 +211,14 @@ html {
   display: table;
 }
 .simform__actions-sidetext {
-  display: inline-block;
-  float: left;
+  //display: inline-block;
+  float: right;
   width: 50%;
-  padding: 0 10px;
-  margin: 9px 0 0 0;
+  //padding: 0px 20px;
+  //margin: 0 0 0 100px;
   color: #8C979E;
-  text-align: center;
-  line-height: 24px;
+  //text-align: center;
+  //line-height: 24px;
 }
 .simform__actions-sidetext::after {
   clear: both;
@@ -365,6 +365,7 @@ html {
   font-weight: 400;
   box-shadow: none;
   min-width: 90px;
+  width:100%;
   padding: 10px 14px;
 }
 .btn.full, .simform__actions .full.sumbit {

@@ -18,6 +18,7 @@ var usernameresp,tokenresp,statusresp;
     					if(bool)
     						{
     					createCookies();
+    					window.location.replace("http://localhost:8080/SmartMaps/userhome.html")
     						}
     					else
     						{
