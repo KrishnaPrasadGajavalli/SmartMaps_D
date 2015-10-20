@@ -1,9 +1,8 @@
-var usernameresp,tokenresp,statusresp;
+var usernameresp,tokenresp,statusresp,emailresp;
     (function($){
         function processForm( e ){
             $.ajax({
                 url: 'http://localhost:8080/SmartMaps/login/user/loginservice/log',
-                dataType: 'application/x-www-form-urlencoded',
                 dataType: 'text',
                 type: 'post',
                 contentType: 'application/x-www-form-urlencoded',
@@ -14,6 +13,7 @@ var usernameresp,tokenresp,statusresp;
     					usernameresp = resp[0]["user_name"];  
     					tokenresp=resp[0]["token"];
     					statusresp=resp[0]["status"];
+    					emailresp=resp[0]["email"];
     					var bool=authenticateUser();
     					if(bool)
     						{
@@ -22,11 +22,13 @@ var usernameresp,tokenresp,statusresp;
     						}
     					else
     						{
+    						document.getElementById("errormsg").style.color="red";
     						document.getElementById("errormsg").innerHTML="Invalid Username or Password";
-    						}
+    						} 
     						
                 },
                 error: function( jqXhr, textStatus, errorThrown ){
+                	console.log("Hi");
                     console.log( errorThrown );
                 }
             });
@@ -39,7 +41,7 @@ var usernameresp,tokenresp,statusresp;
     
     function authenticateUser()
     {
-    	if((usernameresp=="null") && (tokenresp=="null") && (statusresp=="not_registered"))
+    	if((usernameresp=="null") && (tokenresp=="null") && (statusresp=="not_registered") && (emailresp=="null"))
     	{
     		return false;
     	}
